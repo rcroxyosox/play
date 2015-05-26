@@ -3,7 +3,7 @@ import Entity from "Entity";
 
 var App = { 
 	start(){
-		var ent = new Entity({gravity: 0.01});
+		var ent = new Entity();
 		$('body').append(ent.render().$el);
 	}
 } 

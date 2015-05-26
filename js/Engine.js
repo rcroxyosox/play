@@ -2,8 +2,9 @@ class Engine{
 
 	constructor(options){
 		this.entities = [];
-		this.gravity = 0.02;
-		this.framerate = 1.0;
+		this.friction = 0.06;
+		this.gravity = 0.06;
+		this.framerate = 0.0;
 		this.loop();
 	}
 
@@ -21,7 +22,7 @@ class Engine{
 					clearInterval(loopInt);
 				}
 			}
-		}, Engine.framerate);
+		}, this.framerate);
 	}
 
 	static get instance(){

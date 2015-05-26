@@ -9,7 +9,7 @@ define(["exports", "module", "jquery", "Entity"], function (exports, module, _jq
 
 	var App = {
 		start: function start() {
-			var ent = new _Entity2["default"]({ gravity: 0.01 });
+			var ent = new _Entity2["default"]();
 			(0, _$["default"])("body").append(ent.render().$el);
 		}
 	};

@@ -10,8 +10,9 @@ define(["exports", "module"], function (exports, module) {
 			_classCallCheck(this, Engine);
 
 			this.entities = [];
-			this.gravity = 0.02;
-			this.framerate = 1;
+			this.friction = 0.06;
+			this.gravity = 0.06;
+			this.framerate = 0;
 			this.loop();
 		}
 
@@ -34,7 +35,7 @@ define(["exports", "module"], function (exports, module) {
 							clearInterval(loopInt);
 						}
 					}
-				}, Engine.framerate);
+				}, this.framerate);
 			}
 		}], [{
 			key: "instance",
