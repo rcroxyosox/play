@@ -1,0 +1,91 @@
+@-moz-keyframes up {
+  0%, 100% {
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -moz-transform: scale(0.5, 1.5);
+    transform: scale(0.5, 1.5);
+  }
+}
+@-webkit-keyframes up {
+  0%, 100% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(0.5, 1.5);
+    transform: scale(0.5, 1.5);
+  }
+}
+@keyframes up {
+  0%, 100% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -moz-transform: scale(0.5, 1.5);
+    -ms-transform: scale(0.5, 1.5);
+    -webkit-transform: scale(0.5, 1.5);
+    transform: scale(0.5, 1.5);
+  }
+}
+@-moz-keyframes down {
+  0%, 100% {
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -moz-transform: scale(1.5, 0.5);
+    transform: scale(1.5, 0.5);
+  }
+}
+@-webkit-keyframes down {
+  0%, 100% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 0.5);
+    transform: scale(1.5, 0.5);
+  }
+}
+@keyframes down {
+  0%, 100% {
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+  50% {
+    -moz-transform: scale(1.5, 0.5);
+    -ms-transform: scale(1.5, 0.5);
+    -webkit-transform: scale(1.5, 0.5);
+    transform: scale(1.5, 0.5);
+  }
+}
+/* line 14, ../scss/Entity.scss */
+.Entity {
+  position: relative;
+  border: 1px solid red;
+  -moz-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+/* line 19, ../scss/Entity.scss */
+.Entity.TYPE1 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+/* line 26, ../scss/Entity.scss */
+.Entity.up {
+  background: red;
+}
+/* line 31, ../scss/Entity.scss */
+.Entity.down {
+  background: blue;
+}

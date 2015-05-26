@@ -1,0 +1,35 @@
+@import "_base";
+@import "compass/css3";
+
+@include keyframes(up) {
+	0%, 100%{ @include transform(scale(0,0)); }
+	50%{ @include transform(scale(0.5, 1.5)); }
+} 
+
+@include keyframes(down) {
+	0%, 100%{ @include transform(scale(0,0)); }
+	50%{ @include transform(scale(1.5, 0.5)); }
+} 
+
+.Entity{
+	position: relative;
+	border: 1px solid red;
+	// @include transition(width 0.1s ease-in-out);
+
+	&.TYPE1{
+		position: fixed;
+		left: 50%;
+		top: 50%;
+	}
+
+	@include transition(background 0.4s ease-in-out);
+	&.up{
+		background: red;
+		// @include animation(up 0.4s cubic-bezier(0.54, 0.04, 0.27, 1.23) 1);
+	}
+
+	&.down{
+		background: blue;
+		// @include animation(up 0.4s cubic-bezier(0.54, 0.04, 0.27, 1.23) 1);
+	}
+}
